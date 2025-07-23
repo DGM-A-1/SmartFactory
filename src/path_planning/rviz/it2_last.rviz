@@ -52,7 +52,7 @@ Visualization Manager:
         Z: 0
       Plane: XY
       Plane Cell Count: 10
-      Reference Frame: map_center
+      Reference Frame: map
       Value: true
     - Alpha: 0.699999988079071
       Class: rviz/Map
@@ -97,21 +97,23 @@ Visualization Manager:
         All Enabled: false
         base_footprint:
           Value: true
-        base_link:
-          Value: true
-        base_scan:
-          Value: true
-        caster_back_link:
-          Value: true
-        imu_link:
-          Value: true
         map:
           Value: true
         odom:
           Value: true
-        wheel_left_link:
+        robot_1/base_footprint:
           Value: true
-        wheel_right_link:
+        robot_1/base_link:
+          Value: true
+        robot_1/base_scan:
+          Value: true
+        robot_1/caster_back_link:
+          Value: true
+        robot_1/imu_link:
+          Value: true
+        robot_1/wheel_left_link:
+          Value: true
+        robot_1/wheel_right_link:
           Value: true
       Marker Alpha: 1
       Marker Scale: 1
@@ -123,17 +125,19 @@ Visualization Manager:
         map:
           odom:
             base_footprint:
-              base_link:
-                base_scan:
-                  {}
-                caster_back_link:
-                  {}
-                imu_link:
-                  {}
-                wheel_left_link:
-                  {}
-                wheel_right_link:
-                  {}
+              {}
+        robot_1/base_footprint:
+          robot_1/base_link:
+            robot_1/base_scan:
+              {}
+            robot_1/caster_back_link:
+              {}
+            robot_1/imu_link:
+              {}
+            robot_1/wheel_left_link:
+              {}
+            robot_1/wheel_right_link:
+              {}
       Update Interval: 0
       Value: true
     - Class: rviz/MarkerArray
@@ -172,7 +176,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 7.860161781311035
+      Distance: 13.305821418762207
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -188,9 +192,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.38479647040367126
+      Pitch: 1.5647963285446167
       Target Frame: map_center
-      Yaw: 0.41500023007392883
+      Yaw: 0.31000030040740967
     Saved: ~
 Window Geometry:
   Displays:
@@ -208,5 +212,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1200
-  X: 459
-  Y: 112
+  X: -23
+  Y: 32
