@@ -1,0 +1,13 @@
+<launch>
+ <param name="use_sim_time" value="true" />
+  <!-- AMCL 실행 -->
+  <node name="amcl" pkg="amcl" type="amcl" output="screen">
+    <param name="base_frame_id" value="base_footprint"/>
+    <param name="odom_frame_id" value="odom"/>
+    <param name="global_frame_id" value="map"/>
+    <param name="scan_topic" value="/scan"/>
+    <param name="transform_tolerance" value="0.5" />
+  </node>
+
+</launch>
+
